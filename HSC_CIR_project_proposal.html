@@ -1,0 +1,793 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 5.1.3.2 (Linux)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changedby" content="BQ "/>
+	<meta name="changed" content="2016-11-29T19:39:37.746925637"/>
+	<meta name="AppVersion" content="15.0000"/>
+	<meta name="DocSecurity" content="0"/>
+	<meta name="HyperlinksChanged" content="false"/>
+	<meta name="LinksUpToDate" content="false"/>
+	<meta name="ScaleCrop" content="false"/>
+	<meta name="ShareDoc" content="false"/>
+	<style type="text/css">
+		@page { margin-left: 1.13in; margin-right: 1.13in; margin-top: 0.5in; margin-bottom: 0.19in }
+		p { margin-bottom: 0.1in; direction: ltr; line-height: 120%; text-align: left; orphans: 2; widows: 2 }
+		td p { margin-bottom: 0in; direction: ltr; color: #000000; text-align: left; orphans: 2; widows: 2 }
+		a:link { so-language: zxx }
+	</style>
+</head>
+<body lang="en-US" dir="ltr">
+<div title="header">
+	<p align="left" style="margin-bottom: 0.31in; line-height: 0.14in"><span class="sd-abs-pos" style="position: absolute; top: 0.5in; left: 0.08in; width: 586px"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAU0AAAABCAYAAABaHfxnAAAACXBIWXMAAA7JAAAb5wGN8Qs/AAAAHElEQVR4nGN5/PixzNKlS6MZRsEoGAWjYBQQBABedgUUPlzV+AAAAABJRU5ErkJggg==" align="left" hspace="12"/>
+</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAScAAABkCAYAAADE4fY3AAAACXBIWXMAAAsTAAALEwEAmpwYAAAaZElEQVR4nO2dCZhUxbXHT92e7umBYfMhTBQVhff0segoiogoIgxx4VOUTZAB8T23RKMYP0HQACokaozGJCa+JAg0CAgqKBBkQMQVXEcd4gY+YqKCCLINs/XcenX6VnVX19zb3dMzzFznnd/31fRdars1ff996lTVvTlAEAThQ3KauwIEQRBukDgRBOFLSJwIgvAlJE4EQfgSEieCIHwJiRNBEL6ExIkgCF9C4kQQhC8hcSIIwpeQOBEE4UtInAiC8CUkTgRB+BISJ4IgfAmJE0EQvoTEiSAIX0LiRBCELyFxIgjCl5A4EQThS0icCILwJSROBEH4EhIngiB8CYkTQRC+hMSJIAhfQuJEEIQvIXEiCMKXkDgRBOFLSJwIgvAlJE4EQfgSX4rTB+edcQ3Y/GoG0F0/zrUN7vzZwW0+6fQtH+xQp1ovGN+Lg/1nxlgBMDzCIPlTbgOUib/zD41bsPwIXw5BEFngO3H6cECfh4Ro3AFWXEmAc0eWnCPc2eAxsenKLKtA7O1IRLYLRNp+oFJIYWJ1BAq6iqyGtX6qeHL5uMijGVavtQj3yU8FiluJtt9ZhHuNdE+I8J4I54owwSXfX4iwS9s/VYSfusTDfHuIMDKDur4pwkoRvnc5VyzCgAzyeF6El0Uodzl3hgg3pEn/ogjPepxza8tMuV+Ef4pwpwjdXM6/JkJEbh8LTvu6of4vqeIgn4nwsMc5r7bcLsKD2r7X/xSZI8Kt0LC2aHH4SpxKzz39SvFxo3mcMV2o1DHcsZf0rrTeTYoctD/iUbaOMWuokwAjCzuLxxJo2uTkJYTv3rxF43dUXL1wRQZV/K0I/2Ucu16EU0T4VO7PdokzUYSwCBtEyHXJtxc4wqX4qwhnusRDQejtkYfJ9fJzlggzteMni7Agg/QqjyoR/luEhca5NzKoh9k2Om5tmSmPiXCzCA+kKHePCGtEWAHubYmo/0uqOIrnRPjCOJauLctkHRCv/6mqb7Y81oC0vsY34vTOkD7tAtVsghCPfLfzcetJCpXY3wOBQIS9+26NHq983JJdreddFeEBPkRokhVTMSlQaDZxnpyvON1GHBwPz1+/Di77n8Npqrnf5RhaFYfTxDmgfR7tcv5fxv5ej/L3psjDixmyfupXHLdRcDIROJDx0Ao5CI4lpsikHlWQ3DY6bu1UH3amKfeQ3PZqS+RABnEUaPHONI6la8tD2naqMvA7lI3V1KLxjTiFa2CCEIrLvWMkd/OE6kR6vfLuGreY5dcsWZi3YNwQkWQii6uRYzmZm7FdDiPy9peXVDhmfip+LsLHIvxZ7qM5PRiSzeqpImBXc5zcf0qE2+X26SKcI8IyLf4oSL7pEbwRRkPiV/GfMg+M11WE00T4mQjnyfMoPG9r6fNl/N5y/15Z5+9lXlgH7A79RoTjZBzM7xstj04iTAOny4M8bNSzt1b+WeB0sZBXtXpvBe8uB7blSyKcr6VV1+mGXlcEu9Noaatuo54Wu1Tvy+1hIqjvVX8RJstt7LJe7xLnBBF+7VI+tg9axfqPoWpLdCM8Lo+hiF8rwrcivKLFxf8pttcQSHSHN8p02K5o6WfbFi0SX4hT2YC+PUQXbQIw5hnHORVXlK0W8IhnZIHFWITbvIhb7BgnqdYfVNloZpQ4Oj53wfh1VRMW/m+a6r6pbeOv4efGefzyfgAJccJt5U/6CpybSsfNIY/xXzLKUfE+l+EySIgDdrFMgZsHTreiJzi/7MdAwv/0vgx3Q+JLjuVtNfJAQauW26ZvZ5dWJ/2G3eFxTW6shuTvoH6dykeD17XGqKviOW37OC0t+uXUDw2KxD1y+yQt/uuQ+L/UaGlnanFQwFB80ELsAI4YLjXqoNryanC65m3AsQpfMeKp9rpNO/ZLSPgrG9oWLQ5fiBML2MJqYvH+eLKPiWvbznEUph6vvvdeqjzLixdtyJs/LiIspyncyRSSRErlmTg2IMBtdG6azuwfKv8JyaOdB7wipmCwtu3mWD+SKB+N8lspIcFulH4taGGoG/U4uX81JPtxngTHX/Qf2rFtLmUGwbGQFL8XYZ38RG6BuuKk+B0k/IZoGZW4xDlTi7PdI44bmbZFi6LZxemTgX1OsS32cxbvtiVbT45QxU0d/LNtF+R7jZwkYXE7wpmFZnQfFCCeLgHnxeH5Y0sqJy5+M11UyfHg3hVM51xtbNA5fIm2jzdAT20fLYB0IzozIdkvcikkunTIHxtQv0zR21O31PB7qrpFaInq14I3qhKntvKz2Mi3SObbSjvmJrZoGXWQ20o83gGnS4vWJ7brmfKYCXYvd4NjZY0Ax0ozHehTte3pLnnoZNMWLYpmF6cvWhXMOr5qT05AiIdXr05ZTLEemc3uGbRpUzSTvMuvWbI1b97YiEjXJ1WXUevydY85x5O7bqnAL3JDRloaiyEpzqEP5O4M8kg1PQG7o25+mMYmVXvq3Ugd9AGqHwO0FLFbZXZ5xoBzo/fQjn3rktct2vZM+YkiNleEm+Q++pPcxAm7hjgyqqysW2VQoFiN0PL0mmKhyKYtWhTNKk5D79t1UfT1a3rsCeVCh9oohGprXeMx5oiH0JDXemzasqQ+ZQRraiI1wWARA36pV5xETw+nGvDivCfHllRMWryiPuX4GLxZUWx/DI6fJRvQgvpIhEFQ18eWKWr+lz4HqTHQpyngQMSF2r4aScN6o2Cdop0z/Wt6lwvBLq3y6XXWjqM4odXjZnnh4IeysrBrN1OLp89vwwGDpFFmoi7NJk4DZ/Acznc/sr/VsXvbVGyHA+FWkG9HIVxVCcwc7xeSYdsxJ+ND9S3nwHXL94bnjokIhSsSIVQ3Bjc2WRvO7fHwxPXr4Ia0Uwu8RlSugIRDvCkwR+tUHXAEqrUMOMcKR6J2gTvmaF2+zANFDW82FKi/gePLyubGWgUJv8lb4D73SW/PTEekvtO2O0KiS4fChJM875f7YyEx5O8mLNca+9d4lId54P/2Dy7ndCtLj2f6sjKZZ5ZNW7Qomk2ccq09NwKzTtl83Ii/j/rsQeCi21WZ10qcCEOrg/vrOK6ZxZ87ZcOW57Mpq/LapUvDc68qEhaY+6Q/Hv+jGJEb3FdSlX5qgT6iooMmfFOKk9toHdYLf/HR4kE/CN4sOOnwQXDHbbRuHjgjRW/J9Oj7uMSlrEwIatte3zu9Pa8D54bUnb5qNrY+o16f74TTE5TP6GlwZqgrcbpZi/elUS6mMcUpFTgdwU2cEL0LqOKN0eqFvjvTF+VGNm3RomgWcRp8757egEIhBOnzo/v2+O6r494uqNmJc2UgKrp41Ud1hODhcrAqK5zROs4/CQJ7PF2+qWDRwEwIRvFL4jrJE+GaSDGbT4UnJ86HSfMrG1JuBrg5TpFjtO1suwD4pcUZ98/I/V5Z5PEhJFsgJ2dZl/piOn1RFJXFgTPlz5Lb+tSPDto2XjP6htCxjaKqWx4fGmXhD4myqvAH0Kvbib6702R+6GR3G217R5Y9Qos3Uzs/1yPvVGTaFi2KZhGngMXQ6Vyo9l/tMjJv5I7HdzFgnRmzoDYUAktYUFb5IWAH9okYLNJt/Rtmt6VeVFy/6F/hv475lche3WSGccaTPnDdXjhafmflkZlagJPvBsltHJoeDo7TWYFdp0Xa/uoGlHV8A9IqTmyEPOqL6fQNemy7ddHQwlATdLF9pxnnzRGuydo2CrGbwxsJiKB8nl7TBRC0uJXzG8tXovl6irxTkWlbtCiaXJx+fN93Q2zOi/UnBPy944Be/9izafO/V3zWOXYcQ1C0eWuxGw6/yXfvbhwHao4dsaMwlDF2fvxYnfkFXBeo4vCfRpZU3rhcjd6hKX2ZFhlvfPMXFLtSY7R93EZH7RRIWEB4AyhxQj8M/rrjzGq0oLAb1U9LjzeaPoyP5eHIWn/tmDmVQDEQki0d5RBXXQJduGaC+xIL9Dvpy1TUj4S+8Fef3Ij1cusOmyKpFv72NuJ4daVP8jjuNpSOXTrV1i9AXXHaIz/V/1MN1ePIJnah0Kmud39RAHAdn26ZjZB1RQvGHGjA74Oy2PQ0v/O4hsZqixZFk4tTLWPjhYX0I/N4ybFjf3TCF3O2Bxl0c+Y2sdgcp0CbNk+fuOjZpC/gVcvsM20OFwkRQRO7gDPogp+MA3bBdgpt2SmS4nq1TTUBWPvcCCu2dq1y4rIvc+eOjoh05yeXblhNEJ/82Z0H4lML3BZ54hcPJ+mZC3/P0OKcIQPW4TfyGFpOKDDq1xC7FG7TAVCYcNRI9ym8AHXXcqWaSqDAIfe5HtcBkNmTDrC7slFuey387QbuTwowcVv4m+3UDOzunKbt65bmZkieqImgcLi1QxutfJyuov5fOMVgMtQF46rFwyaPQGJagSrTa/pAY7ZFi6FJxWnw7D3jhAAYE+QcE+rr/G4nlLXvt/ns8s3xL7ZdU71m33sfxxyPI5fa3UXMKSIMszkr0JLqRhh+SdqzxJDx+GAtwKil9jtC6Z6pDsKfVn55cSS3dZuhzFnTVgduOuJtKA49cWVJ9Q3P4tMP3BZ5ZrLw1+043ug47wZX+59RN3rMksIRpq+M4/Vd+AuyDPQ91UD9F/6CjI+WxH0NrIdOQxf+6ugWH9Z1nXEeLW/dekKxT9cOe7TtVHX1mqGN0wqwvZTlhGLl5TtszLZoMTSZOA2ccaAj49XFDCzLnAXuwGDtMWN79Nj+8UdHQUVvEWNfDmPzHpr6dr/RHMYIyRgjbKmO2ZQtl8acGarmo0YVrFm8+fCcNd9GS7F71N4zUXxiJrThtrCenhi2Dm5YpRbM6pizdHEWsDmJswLc/UZozfQB5ybvK0IeODcartXyWi6Cc3FO8zhngsL2iZGXvvA3E3CZB85tMp/ppC/8rS9fQ2Lhb14W6Q8a++ioPkY7Z7YdrhF8X9v/VMbxagdz0S4uH9npUVevCbuY/zCtXhs84iGN2RYthiYTp1CoZgjwwEXJR5NF6nBOm7YvFIxjE3dj74O/MWVwpCez+VNCXXJSzO924By7TfkibnuvKEKkYl2sc1pN27a9+uF3yiq3JHeHzHV3ice0jMjlwb+In9m1kPwld0NfRJopuOwhU6e3WvjbENRi1YbQGLOUG+Lo13kjzfkdoD+QMEF92iGbuqarV0Pzb9E0mThxmw1iWv/Liw/a9e218+C6rc/2ve0EEf8St7gc+GZxdLUljK2KHLZt5RVsnzo38UkergxDAQ/wfiIiTiC8CJjsBsaLZ9275d5+UtSet+uTqjWdjeyTu3ZyeoENHH0/azO/YoIgGkLT+ZwYy/XqzulYQQv+MuC+bjyUW9fJyPlyG+Cu5WMstxXlMeZPYugU3yFDbNh39BI+HBifIepQqJVknZx3beccqxNsrYiAzY3leubETF4vHw1BEA2kCR3iDOd3TNT2jU1n367lUFUdCIf0hSacl3LGJi0bY5V65X7FM3YX22KHdCtK8fRVbMXAjXxVp90wnnH+iN716xjoXCEspbzkKQXJllPseQZ2bJY0QRBNRNOJk81e5Mzewph1dmzfq4sndKB8ZwVAQfhQKD+YLw4sFMJ007LRLP7I08uf4+1DNTBcCA0u5sVuWz7gmmEcmXvaRstpm8h1LWNs9dJR7GVMs2kQQ9No3pXL+eZ8XllSycNdTs97B84OPVa28UD0LLMOzofa4BtzrOhGWqlJEE1Hk4nT+l+0+7zovn0RoUWOONXp4mn7MYGqyo+252tX/SQ3PvUgJkrVcBur5rfGrB+Xx6AwYNgdxGUavTiHO0YvtUuBs1loPeH5Z0eyT75++87Sjd/37zKk9QtgR3nvn3Rgbz2+l/d1ijb9TbFMF1TctNoc0icI4gjSpPOcAtG2kdrgoaHiZpezrL0c486jdCu/r+4/ZE75ZeuntX5+zGJ7mF3DbxfW0KBUDvW6WbFCEf25kUvteWLvocgpP72gtvbQJRe3XQ3RaC0+Kyo8oV0gvHBf9f79NmuX9HI8iDnHF0c75jbmIz4IgsiAJhWntbOsA0WzD+CNXiRUQ5vTId+oUicFaws2Lx4+v3o/t2CxsIrqLtrlPMpxNjiHHSKXLrEHxrlgMXaNBdF+h2rz9oV5laWf65jDTr3r39gbU7/l/ZMqwuE7btsRGL3M/UFTBEEcMZp8+UrJ9LbLi+7fL6wndl3sVU3pEjAYWf5NzfrQiTk4jJ9YYoHzmhjMCkTZisVXs/gzfbDrF47yAdyGc4Vo3Sa7eTF65H743VHRjwfUWO0hGn9ia+ypB3BxHnRaGOQ7yqpZV3XcZjxS+7NVf2ucKycIoj40y1MJrEBoTq0dRV+SNl3Au6tmR/nUXbtZ785Hc+ymjRRiMq8qxCa7jczJY/hgs1VXLufzA7X8j6IreEGnwDdPTSuYdiqKYdDeC5xVCfnJg6ic0xS2WPfbO9S+OWlnoCvui8Nlls0iZDIRRPPQLOL04l15O4bMLn9ISMA9mcx9EuLSNXTg8F27erYa22k3/HbZGOs1M0Vs7R1jh5aNZvGHj6HzW3wMEucueuTYiZeLjGLPM4oJFCsHK1gJNbX54Mxw4tAvxPt0y7G/2l7DjhU23fyaW1c1dBY1QRBZ0mxPwuQsuhDswFCmj96l8HPbAMU5r1WWLLsn72X9+NhFvGM0hy9D6wj9T6OW2stbHWaT5GTMGItPKApwxkYzYy5TQOTaPnQADvIQ7K/BLiYL3dI++o9bv82pqN1z8NFGu1iCIOpNs4nThmntPiuaXR4RgnB2sii5KxQDdhxYsffKvawfr83hM2LCFIsUW4N3VUVrvkXsPariiDLuEMePcvNvWVYttMurEPnnwN6DDLrn2CGRz2SYldkbXoiMwLfY4tox8zHABOFJs759hQeqFvLa0FAG1mWZTQ9gxYPnVK3bMC1Xf7Gh2+hc/AFrVW8Ouk7YRBfE+nIpimgbroagZcFXe9jntbe8sCrTa2hG8IrwiQj4Akl8sy+Ogk4w4iyQ57yeG54pPWU+qgW98i0VYQakf8Z4qfwszKIOyBSXsusDvvhhBThPIM3meejZltlUZbUImlWc1k89av+FwnpiHN+MAnWmFiQTc4YHRQeveOiMfSXrZrXfK6PiQ+yNpx3ApliKjQNzaoAl3npR560uyYRDdvScY6NzsrmWZkC/QdGX5ibSKFZ3ZphfqfwsdDmHFg+Kn7rBisH9eeRXe9TDFJLCetRLr4O6ZhTHnpC9JYbX4NVmR4Ke6aMQJs3+Us2XprdePnjOYWE9OVMLvJEv1gR+qR0K4s2BTw+EXUez33f6lp8gTtzIOERFF+7hZWOs2ILfmjy4WQhSr9hTBrTZ5MwoR80KF3k/Fuq7qQx+WOCNig+uU4uhS8F5gL9uReExfPiZl7WBN086iwfb5WQZV5+U6pY3NuhwmR+KEL5AoDDlVTjx8FG4mZjQSnS3ZphOWUq9ILWglULiWnC7EBLXolgh90dAoo0xji6cWJ8yrTz9O4VpyYLKgGYXJ0RoR0QIBlpPXb2/Y4m1JBys4iG/qly3fmr4Y7lmbjIYj1Gt2jKoJ07gdH0EL0ix0iwpm/OtjNsLG+uamggUCnzmuHq7Ct6oKDIoIsrKwRtlODg3U0OsDQVaG+pmWyDLU3kjK8C5KRfJ8vGG/TRN2T1lml4yT7N76oWZ7hlZ/hR5TFl4+CZe/GKVgrdImteCViDXrqVQph8u83tKS9dLlonplDAx7VqUlUaiVA98IU4vTW/16pBfVuGzve/xjqVEC19bzvoAviSh7oPrE9TaxRwff8viFlfyeaOLZzGIhPq/8kObOoBfePM1R+oGUN2miDymrBg3gcBjnm9ENkDhU89LL9PyVhbDFJkf3tyZ+lmwbCVI9bFczXQrZfmrZUCx6i7rgqD4eIlkJteCgrRNfirBLZNxlDWH5Q7P4loIA1+IEyK6XguFfgyNP7XAPRY4IoWPMGHFF86uKHlpet5GM1bF6wMGizjF8ST44bJIWMv3pWAo+ENbP4c3BwqFekca3hx4Mzwgz6Oz/EHI7AZRXS+Vp1f371NZFn52h+S39pZpcZD6CB5aFvqvRaYje27pVkPCl7RN1mGFFme4S94oMtlcC5bzACTaPAL0RMtGwzfitGFa+LOi2dUR8U07281tzeJ/pUAx3oU51lMdcRJn0Wo6xtmOP/YEvLqMNoeFVp/1XzfCZTQ1eHPizXCq3G/IKBZaB4sgYWW4oVtB6sZvDPSRwMZIp+q1Um6ny7s+QmoyHJLbhZzfjYRvxAkpmR76w+A51RfElqgYoFPbFChhZU0qur/qsZK7c0tVvIpXz70A8KF2stuWbDHxOt9SEWtJ3rmvPNmoF9K04I2V6oUHaBGhYKW7aTCfDyG9xYI34uUpzo/Q4nyaIp5OOp+UiW7ppEu3GrIfxp8Fie4w5mMKWGMKNGHgK3FColXBsTnhqOzn4xMG1FtQmCZQDmJ3m2XZh/T0InZUWFQ7RcQCFUn/4eQqL+CfiI0V4SqWws/la/DGUN0P1SXFG1YZntitU/6oxGiCO3o6t/lLytHbS36ukGWWaemU41iVh+UXguNEVuKpz8sCSDjrV0Jy98xtVE3VQXWhEk7I1Om2ynqtkPtYHgqoek6Yqqeel5om8aE8htf6qSwbP1Hw0X81BZLbQP0flCNexV+p1UEvj0iB78Rp06zY6NtMSH6/fMa0Ou91XHdX56WdLZCtkLgRlVMYb4Jsukfp0m01zuvbupAVuqR1O5Z+QWX6OqRK5zavSgev1xwRfNBIh2L4jBFPlbXS+DTLU2n0upl1INLgO3EiCIJASJwIwh3shmF3dDjQ/KRmgcSJINwpbO4K/H+HxIkgCF9C4kQQhC8hcSIIwpeQOBEE4UtInAiC8CUkTgRB+BISJ4IgfAmJE0EQvoTEiSAIX0LiRBCELyFxIgjCl5A4EQThS0icCILwJSROBEH4EhIngiB8CYkTQRC+hMSJIAhfQuJEEIQvIXEiCMKXkDgRBOFLSJwIgvAlJE4EQfgSEieCIHwJiRNBEL6ExIkgCF9C4kQQhC8hcSIIwpf8H+0h4/+QSeNgAAAAAElFTkSuQmCC" name="Image1" align="left" width="159" height="54" border="0"/>
+<br/>
+
+	</p>
+</div>
+<p align="left" style="margin-top: 0in; margin-bottom: 0in; letter-spacing: normal; line-height: 0.11in">
+<br/>
+
+</p>
+<p align="left" style="margin-top: 0in; margin-bottom: 0in; letter-spacing: normal; line-height: 0.11in">
+<br/>
+
+</p>
+<p align="right" style="margin-left: -0.02in; margin-right: 0.03in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 0.15in; orphans: 2; widows: 2">
+<font face="Arial, serif"><font size="3" style="font-size: 12pt"><b><span style="letter-spacing: -0.1pt">HSC</span><span style="letter-spacing: 0.1pt">
+</span><span style="letter-spacing: 0.1pt">CI&amp;R </span><span style="letter-spacing: -0.1pt">Mobile
+App</span><span style="letter-spacing: 0.1pt"> </span><span style="letter-spacing: -0.1pt">Projec</span>t<span style="letter-spacing: 0.1pt">
+</span><span style="letter-spacing: -0.1pt">P</span><span style="letter-spacing: -0.1pt">roposal</span><span style="letter-spacing: 0.1pt">
+</span><span style="letter-spacing: 0.1pt">(</span><span style="letter-spacing: 0.1pt">11</span><span style="letter-spacing: -0.1pt">/</span><span style="letter-spacing: -0.1pt">2016</span>)</b></font></font></p>
+<p align="right" style="margin-left: -0.02in; margin-right: 0.03in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 0.15in; orphans: 2; widows: 2">
+<br/>
+
+</p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%; orphans: 2; widows: 2">
+<br/>
+
+</p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%; orphans: 2; widows: 2">
+<font face="Arial, serif"><font size="4" style="font-size: 14pt"><b>1.
+Agency Background &amp; Capabilities</b></font></font></p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%; orphans: 2; widows: 2">
+<br/>
+
+</p>
+<a href="#contact"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">1</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.1
+Agency Contact</span></font></font></p></a>
+<a href="#history"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">1</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.2
+Agency Summary &amp; History</span></font></font></p></a>
+<a href="#portfolio"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">1</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.3
+Agency Portfolio</span></font></font></p></a>
+<a href="#capability"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">1</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.4
+Design, Development, &amp; QA Capabilities</span></font></font></p></a>
+<p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; letter-spacing: normal; font-style: normal; line-height: 100%">
+<br/>
+
+</p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; line-height: 100%; orphans: 2; widows: 2">
+<font face="Arial, serif"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><b>2</b></span></font></font><font face="Arial, serif"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><b>.
+</b></span></font></font><font face="Arial, serif"><font size="4" style="font-size: 14pt"><span style="letter-spacing: normal"><span style="font-style: normal"><b>Project
+Proposal</b></span></span></font></font></p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%; orphans: 2; widows: 2">
+<br/>
+
+</p>
+<a href="#concept"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">2</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.1
+Project Concept &amp; Recommendations</span></font></font></p></a>
+<a href="#example"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">2</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.2
+Other App Projects &amp; Examples</span></font></font></p></a>
+<a href="#approach"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">2</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.3
+Project Approach</span></font></font></p></a>
+<a href="#timeline"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">2</span></font><font face="Arial, serif"><span style="letter-spacing: normal">.4
+Timeline &amp; Budgets</span></font></font></p></a>
+<a href="#measurement"><p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; font-style: normal; font-weight: normal; line-height: 100%">
+<font size="3" style="font-size: 12pt"><font face="Arial, serif"><span style="letter-spacing: normal">2.</span></font><font face="Arial, serif"><span style="letter-spacing: normal">5
+Measurement, Analytics, and Ongoing App Improvement &amp; Management</span></font></font></p></a>
+<p align="justify" style="margin-right: 3.8in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; font-style: normal; line-height: 100%">
+<br/>
+
+</p>
+<p align="justify" style="margin-right: 3.8in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; font-style: normal; line-height: 100%">
+<br/>
+
+</p>
+<p align="justify" style="margin-right: 3.8in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; font-style: normal; line-height: 100%">
+<br/>
+
+</p>
+<p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; letter-spacing: normal; font-style: normal; line-height: 100%">
+<br/>
+
+</p>
+<p align="left" style="margin-left: 0.13in; margin-top: 0.01in; margin-bottom: 0in; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
+<br/>
+
+</p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%; orphans: 2; widows: 2; page-break-before: always">
+<font face="Arial, serif"><font size="4" style="font-size: 14pt"><b>1.
+Agency Background &amp; Capabilities</b></font></font></p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%; orphans: 2; widows: 2">
+<br/>
+
+</p>
+<a name=contact></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>1.1
+Agency Contact</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Agency
+Name: </font><font size="3" style="font-size: 12pt">HUBBLEWAVE
+Inc.</font><font size="3" style="font-size: 12pt"><br/>
+Contact
+Person: </font><font size="3" style="font-size: 12pt">Michael
+Zhang</font><font size="3" style="font-size: 12pt"><br/>
+Address: </font><font size="3" style="font-size: 12pt">406
+Guilin Rd, Xuhui District, Shanghai, China 200233</font><font size="3" style="font-size: 12pt"><br/>
+Email:
+</font><a href="mailto:michael.zhang@hubblewave.com"><font size="3" style="font-size: 12pt">info</font></a><a href="mailto:michael.zhang@hubblewave.com"><font size="3" style="font-size: 12pt">@hubblewave.com</font></a></p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">website:
+<a href="http://www.hubblewave.com/">www.hubblewave.com</a> (in major
+overhaul) <a href="https://hubblewave.github.io/">initial
+version</a></font><font size="3" style="font-size: 12pt"><br/>
+Phone:
+</font><font size="3" style="font-size: 12pt">(+0086)1580-098-3026</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<a name=history></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>1.2
+Agency Summary &amp; History</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p align="left" style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">HUBBLEWAVE
+was set up in 2012 by a small group of loosely-coupled web/mobile
+developers in Shanghai. The core team has several decades of
+extensive web/mobile development experience, most of its members hold
+BS, MS or even PhD in computer science.  Since then the Agency has
+been growing into remotely connected teams including designers,
+developers and QAs in China, India, Eastern Europe, working on a
+dozen of web/mobile projects and gradually pivoting into data
+analytics and machine learning. The mission of the agency is to
+provide high quality start-of-the-art cloud-based enterprise
+mobile/data solution.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<a name=portfolio></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>1.3
+Agency Portfolio</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<ul>
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Moon+
+	Android Book Reader:</font></p>
+	<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Supporting
+	various navigation and display features, various book formats and
+	local and online library management.</font></p>
+	<p style="margin-bottom: 0in; line-height: 100%"><a href="https://play.google.com/store/apps/details?id=com.flyersoft.moonreader"><font size="3" style="font-size: 12pt">https://play.google.com/store/apps/details?id=com.flyersoft.moonreader</font></a></p>
+	<p style="margin-bottom: 0in; line-height: 100%"></p>
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Fooda
+	(Online food ordering app at office):</font></p>
+	<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Users
+	can use Fooda application to buy fresh, great tasting lunch options
+	that rotate daily right into your office. <br/>
+iOS -
+	<a href="https://www.upwork.com/leaving?ref=https://itunes.apple.com/us/app/fooda/id476660276?mt=8" target="_blank">https://itunes.apple.com/us/app/fooda/id476660276?mt=8</a>
+	<br/>
+Android -
+	<a href="https://www.upwork.com/leaving?ref=https://play.google.com/store/apps/details?id=com.vokal.fooda" target="_blank">https://play.google.com/store/apps/details?id=com.vokal.fooda</a>
+	<br/>
+</font><br/>
+
+	</p>
+	<li/>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Go
+	Share:</font></p>
+	<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">GoShare
+	connects drivers who have a pickup truck or cargo van with people
+	and businesses nearby who need help delivering, moving &amp; hauling
+	large items on demand. GoShare driver will meet customer at the
+	pickup address, help them load cargo into their vehicle, take it to
+	the drop off address and help them unload. <br/>
+Customer -
+	<a href="https://www.upwork.com/leaving?ref=https://itunes.apple.com/us/app/goshare-moving-delivery-hauling/id977871324?mt=8" target="_blank">https://itunes.apple.com/us/app/goshare-moving-delivery-hauling/id977871324?mt=8</a>
+	<br/>
+Driver -
+	<a href="https://www.upwork.com/leaving?ref=https://itunes.apple.com/us/app/goshare-driver-earn-money/id978279500?mt=8" target="_blank">https://itunes.apple.com/us/app/goshare-driver-earn-money/id978279500?mt=8</a>
+	</font>
+	</p>
+</ul>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<a name=capability></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>1.4
+Design, Development, &amp; QA Capabilities</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+have one project manager, one designer and several Android/iOS
+developers in Shanghai, and one designer and one or two developers in
+each other location. We adopt agile development methodology, and each
+developer is responsible for testing his/her own code. We do regular
+code review in house and cross teams. Coordination and collaboration
+are made by working on distributed source control platform
+Github/Bitbucket, and using team management tools such as Slack,
+Skype, Trello. We do integration test and outsource acceptance test
+to industry standard mobile testing cloud such as TestIn and Xamarin
+Test Cloud, prior to customer acceptance test.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">A
+typical software project life cycle begins with meeting with the
+client for requirement analysis and negotiation, clarifying the scope
+of work, initial design, work flow, mockups, and initial timeline and
+budget. The project manager then works with the architect and
+software developers to deliver functional specification and software
+architect diagram if any, and detailed specification. Based on these,
+a detailed project plan is delivered including detailed timeline,
+resource allocation, quality management plan, and risk control and
+management plan. Agile development methodology is adopted for
+development process. The Github integrated standard CI/CD is set in
+place for continuous integration and delivery. Designers, and Android
+and iOS developers work in parallel roughly according to the detailed
+project plan.  </font>
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">To
+ensure high quality code, the detailed project plan accommodates one
+day testing and bugfixing each week in a revolving way. Everyone in
+the project acts end user tester to find and report bugs at Github
+issues system. Code review is performed upon each Github Pull Request
+before committing into main line repository. Project wiki documents
+each deliverable and get version controlled and reviewed in the same
+way as code to ensure best in class documentation. Designer is also
+responsible for writing user and training manual.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+consult our friend <a href="https://www.linkedin.com/in/patricia-johnson-0a192391">Patricia
+Johnson</a>, an o</font><font size="3" style="font-size: 12pt">pen
+</font><font size="3" style="font-size: 12pt">s</font><font size="3" style="font-size: 12pt">ource
+</font><font size="3" style="font-size: 12pt">s</font><font size="3" style="font-size: 12pt">ecurity
+and </font><font size="3" style="font-size: 12pt">l</font><font size="3" style="font-size: 12pt">icensing
+</font><font size="3" style="font-size: 12pt">e</font><font size="3" style="font-size: 12pt">xpert,
+to </font><font size="3" style="font-size: 12pt">m</font><font size="3" style="font-size: 12pt">aximize
+the </font><font size="3" style="font-size: 12pt">b</font><font size="3" style="font-size: 12pt">enefits
+of </font><font size="3" style="font-size: 12pt">o</font><font size="3" style="font-size: 12pt">pen
+</font><font size="3" style="font-size: 12pt">s</font><font size="3" style="font-size: 12pt">ource
+</font><font size="3" style="font-size: 12pt">and ensure the
+integrity of the IP of the final product. We use private
+Github/Bitbucket repository to ensure security of code and client
+materials. For strict confidential materials, we use on-premise
+Gitlab repository to ensure only authorized personnels having access
+to them.</font></p>
+<p align="left" style="margin-right: -0.38in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%; orphans: 2; widows: 2">
+<br/>
+
+</p>
+<p align="justify" style="margin-right: 3.8in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%">
+<font face="Arial, serif"><font size="4" style="font-size: 14pt"><b>2.
+Project Proposal</b></font></font></p>
+<p align="justify" style="margin-right: 3.8in; margin-top: 0.02in; margin-bottom: 0in; letter-spacing: normal; line-height: 100%">
+<br/>
+
+</p>
+<a name=concept></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>2.1
+Project Concept &amp; Recommendations</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">With
+our understanding, the CI&amp;R mobile app is to be developed to
+better help families and staff case managers to access comprehensive
+state and local programs and services serving families, pregnant
+women and children. The goal is to improve efficiency, reduce effort
+and possibly (labor) cost, in order to help reduce infant mortality
+and improve the lives of pregnant women, identify problem and weak
+service areas that affect pregnant women and their families. Another
+sideline goal is to be replicable to other communities. The app
+involves 3 primary entities: families, staff case managers, and
+programs and services.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"> 
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">With
+this overall goal in mind, we find the given designs, workflow and
+mockup are primitive. It basically consists of 3 primary functions:
+form intake, fixed decision logic and information presentation. If
+form data is only to be emailed to staff members, then the app could
+function properly without back-end server, meaning all 3 functions
+could be implemented on mobile client side only(no logic and database
+on back-end server needed), except that we are not sure what Call,
+Video, Events calendar buttons on Info Session Slide 20 work exactly.
+Is the Call just a normal telephone call or VoIP call where all
+callings could be processed in-app? Is the Video just a fixed video
+clip presentation or VoIP video call? Is the Events calendar fixed or
+dynamically changed? With former cases, they can be implemented on
+mobile client side only; whereas with latter cases, we need logic and
+database on back-end servers.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+find on Info Session Slide 17&amp;18, the form is designed for tablet
+devices only, no corresponding form intake design for phone devices.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+find the current decision trees are hard-coded for each program and
+service. This is not easy replicated to other communities.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+find there is no description about data sources format and how
+integration with other systems such as Tampa Bay 211.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+find the current designs, workflow and mockup have a lot room for
+improvement with regard to user friendly UI, functionality,
+flexibility, scalability and extensibility. We are not saying the
+current designs, workflow and mockup are not needed, in fact they
+form a basic primitive where enhancement could be built upon.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">If
+all programs and services are to be fixed, then it is ok to import
+and hard-code all data about programs and services into the app, and
+hard-code all decision tree logic in app. It is the simplistic
+approach with minimal budget and time. however it'd be not easy for
+replication to other communities.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">For
+flexibility and extensibility, we suggest back-end logic and database
+server approach. We suggest firstly taking time on data model for
+family, case manager, and program and service. In this way, we could
+track and perform data analytics/machine learning in back-end to
+identify problem and weak service area.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">With
+enough budget and time, we suggest an intelligent text(and/or
+possibly voice) chat UI instead of current screen/form based UI. This
+is basically an intelligent chat agent/assistant in much the same way
+as Siri, Google Now, and Amazon Echo. The decision tree logic is
+naturally embedded in chat messages with NLP/ML rather than
+hard-coded in screen/form. This is more user friendly and flexible
+enough for extensibility. The state-of-the-art natural language
+processing and understanding is advanced so much nowadays that it is
+affordable and doable to apply them in everyday apps.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">However
+what we most like about the app concept is its current simplicity and
+quick implementation. What we most concerned about is the efficient
+communication with client and budget for replication and enhancement.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">If
+could, we may suggest firstly develop the current screen/form UI,
+secondly text-based chat UI, and lastly voice-based chat UI, with 2
+tabs, one tab for screen/form, another tab for text/voice chat UI.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+also suggest multiple language version the user can switch between at
+least English/Spanish since they are the most used languages in
+Florida.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<a name=example></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>2.2
+Other App Projects &amp; Examples</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">This
+is our first attempt to work with Hillsborough County and hope so. We
+have previously developed mobile apps for kids such as MindMap mobile
+app, and we are currently providing technical consulting to a
+hospital and a pharmaceutical company in China so we are gradually
+entering into health and medical industry.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">We
+have plenty experience in mobile UI/form design, such as <a href="./ACPanel.png">AC Panel</a> and
+<a href="./Globe3D.png">3D Global</a>. In case you want VoIP call and video we discussed earlier,
+we'd reference the available open source projects. In case you want
+intelligent text/voice chat agent, there are the 3<sup>rd</sup> party
+chatbot and NLP APIs available we can utilize but we probably need to
+invent our own for maximum accuracy and flexibility. We have
+extensive knowledge, experience and resource to accomplish the tasks.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<a name=approach></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>2.3
+Project Approach</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Our
+approach to the project is to closely work with client to develop the
+current screen/form based UI first by April 15, 2017. We'd spend at
+least two weeks on project planning and testing respectively. On
+project planning phase we'd expect to work with client every day so
+we need client's close cooperation, using email, skype or slack. The
+major variables/risks we believe are communication and requirement
+change. We are in progress arranging a US-based partner to facilitate
+communicating with client. Ideally we hope this person is in part of
+HSC and technically participate into project development(actual
+coding) with us from beginning to end so that he would perform
+on-site training and continue technical support after project
+delivery. He will be the immediate contact person from both sides.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Another
+risk is resource allocation. In case there is an absent developer for
+any reason, we plan on bringing third party developers immediately.
+We believe user friendly UI will drive consumer adoption and use.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<a name=timeline></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>2.4
+Timeline &amp; Budgets</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">The
+following is the initial timeline to develop screen/form based UI
+only. The detailed timeline will be given as a deliverable as a
+result of project planning phase. We propose ~$30,000 budget within 3
+months, plus $10,000 paid to the supposed US-based partner.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<table width="100%" cellpadding="4" cellspacing="0">
+	<col width="59*">
+	<col width="43*">
+	<col width="64*">
+	<col width="38*">
+	<col width="51*">
+	<tr valign="top">
+		<td width="23%" bgcolor="#eeeeee" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><span style="background: transparent">Activity</span></p>
+		</td>
+		<td width="17%" bgcolor="#eeeeee" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><span style="background: transparent">Date</span></p>
+		</td>
+		<td width="25%" bgcolor="#eeeeee" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><span style="background: transparent">Deliverables</span></p>
+		</td>
+		<td width="15%" bgcolor="#eeeeee" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0.04in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><span style="background: transparent">Cost</span></p>
+		</td>
+		<td width="20%" bgcolor="#eeeeee" style="border: 1px solid #000000; padding: 0.04in">
+			<p><span style="background: transparent">Notes</span></p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>Negotiation</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>by 12/23/2016</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>initial design, work flow, mockups</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p>clarifying the scope of work, and initial timeline and budget.</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>Project Kick Start</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>01/16/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p><br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>Project Planning</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>by 01/28/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>functional spec,</p>
+			<p>detailed spec,</p>
+			<p>project plan(detailed timeline, resource plan, quality plan,
+			risk plan)</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>$5000</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p><br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>dev env setup</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>by 01/28/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>project repo, CI/CD, etc</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>^</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p>version 0.1.0</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>dev and design</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>by 03/24/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>wireframes, code, documentation, user manual, training material</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>$20,000 divided into 8 milestones in 8 weeks</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p>designer, android and iOS development in parallel; agile weekly
+			sprint;</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>integration testing</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>by 03/31/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>integration test report</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>$5000</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p><br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>factory acceptance test</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>by 04/07/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>test cloud report</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>^</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p><br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>cust. acceptance test</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>by 04/13/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>test report</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>^</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p>side line installation</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>app registration &amp; upload</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>04/14/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>Apple store(approval pending), Google Play</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>$99 + $25</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p>version 1.0.0</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>Initial Project Closing</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>04/15/2017</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>$30,124</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p><br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>US-based partner</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>$10,000</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p><br/>
+
+			</p>
+		</td>
+	</tr>
+	<tr valign="top">
+		<td width="23%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>Total</p>
+		</td>
+		<td width="17%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="25%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p><br/>
+
+			</p>
+		</td>
+		<td width="15%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0in">
+			<p>$40,124</p>
+		</td>
+		<td width="20%" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0in; padding-bottom: 0.04in; padding-left: 0.04in; padding-right: 0.04in">
+			<p><br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">The
+app version would be structured as &lt;major release&gt;.&lt;minor
+release&gt;.&lt;bug fix&gt; with initial version 0.1.0 and first
+major version 1.0.0 for initial project closing.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">The
+development phase is divided into 8 milestones, $2500 for each week.
+Milestone payment should be completed after deliverables are received
+and before next milestone begins.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Included
+in this contract, a $2000 monthly maintenance fee is charged for
+ongoing technical support and minor bug fixes, with weekly or
+monthly(agreed by client) minor updates performed by the personnel
+designated by the vendor, until agreed upon by both parties, or
+performed by the US based partner, full employed or on contract basis
+otherwise. Emergency fix is charged with $110/hr/man emergency fee.
+Separate contract would be initiated for major updates, optimization,
+enhancements such as text/voice chat UI, and requirement changes,
+either hourly-based or project-based, based on the kind, scope of the
+changes. Our normal hourly rate is $55/man.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<a name=measurement></a><p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt"><b>2.5
+Measurement, Analytics, and Ongoing App Improvement &amp; Management</b></font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">Google
+Analytics is used for measurement and analytics. We recommend
+capacity and performance metrics observed by GA, particularly the
+initial load speed. In case there is an issue with initial load speed
+or performance, we will work together to solve the problem on hourly
+contract basis.</font></p>
+<p style="margin-bottom: 0in; line-height: 100%"><br/>
+
+</p>
+<p style="margin-bottom: 0in; line-height: 100%"><font size="3" style="font-size: 12pt">User
+manual, and training and other technical material are delivered as
+part of this contract. On-site technical capable staff should be able
+to make necessary updates based on these materials. On-site staff
+training is charged with $800 per day. Any change involving code
+re-compiling should be performed by a technical capable person.</font></p>
+</body>
+</html>
